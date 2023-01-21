@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Practica 1 Nick Cave Discografia</string>
+    <string name="nomDisc">Nombre del disco</string>
+    <string name="fechaDisco">Fecha</string>
+    <string name="album">album</string>
+    <string name="prod">Production</string>
+    <string name="musicians">Musicians</string>
+    <string name="label">Label</string>
+    <string name="long_des">Long Description</string>
+</resources>

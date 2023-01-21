@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marCover">5dp</dimen>
+    <dimen name="marDate">30dp</dimen>
+    <dimen name="marTV">10dp</dimen>
+</resources>
