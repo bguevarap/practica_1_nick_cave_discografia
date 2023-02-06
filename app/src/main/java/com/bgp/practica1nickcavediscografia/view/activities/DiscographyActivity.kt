@@ -2,33 +2,60 @@ package com.bgp.practica1nickcavediscografia.view.activities
 
 
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.security.crypto.EncryptedSharedPreferences
+import androidx.security.crypto.MasterKey
 import com.bgp.practica1nickcavediscografia.databinding.ActivityMainBinding
 import com.bgp.practica1nickcavediscografia.model.Album
 import com.bgp.practica1nickcavediscografia.model.AlbumApi
 import com.bgp.practica1nickcavediscografia.util.Constants
 import com.bgp.practica1nickcavediscografia.view.adapters.AlbumAdapter
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Response
+import java.io.IOException
+import java.security.GeneralSecurityException
 
 
 class DiscographyActivity : AppCompatActivity() {
 
 
     private lateinit var binding: ActivityMainBinding
+
+    private lateinit var firebaseAuth: FirebaseAuth
+    private var user: FirebaseUser? = null
+    private var userId: String? = null
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         Thread.sleep(3000)
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        firebaseAuth = FirebaseAuth.getInstance()
+        user = firebaseAuth.currentUser
+        userId = user?.uid
+
+        binding.tvUserName.text = user?.email
+
+
+        binding.logOut.setOnClickListener() {
+            firebaseAuth.signOut()
+            startActivity(Intent(this, LogInActivity::class.java))
+            finish()
+        }
+
 
         CoroutineScope(Dispatchers.IO).launch {
             val call =

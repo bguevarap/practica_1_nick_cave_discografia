@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "373730425457",
+    "project_id": "pdisnic",
+    "storage_bucket": "pdisnic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373730425457:android:35374e65a364f631bdb9d0",
+        "android_client_info": {
+          "package_name": "com.bgp.practica1nickcavediscografia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373730425457-n25ig7vtvit79o136rll0hgrv077sbvm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD60my1pvK8Gw7IUtBAzGQ4S4b89ufoedA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373730425457-n25ig7vtvit79o136rll0hgrv077sbvm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

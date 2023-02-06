@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -36,21 +37,24 @@ android {
 }
 
 dependencies {
+    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
     def retrofitVersion = '2.9.0'
     def glideVersion = '4.14.2'
 
 
-    implementation 'androidx.core:core-ktx:1.9.0'//checar
+    implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.0'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    //para share preferences
+    implementation 'androidx.security:security-crypto:1.1.0-alpha04'
 
-//
+    //firebase
+    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
+
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
     implementation "com.github.bumptech.glide:glide:$glideVersion"
-
-
 
 
 

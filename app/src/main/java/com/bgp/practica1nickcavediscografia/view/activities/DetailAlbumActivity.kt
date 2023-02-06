@@ -21,7 +21,6 @@ import retrofit2.Response
 class DetailAlbumActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityDetailAlbumBinding
-    var error:String = getString(R.string.error)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -59,7 +58,7 @@ class DetailAlbumActivity : AppCompatActivity() {
                 override fun onFailure(call: Call<AlbumDetail>, t: Throwable) {
                     Toast.makeText(
                         this@DetailAlbumActivity,
-                        error,
+                        getString(R.string.error),
                         Toast.LENGTH_LONG
                     ).show()
                     binding.pbConexion.visibility = View.INVISIBLE
