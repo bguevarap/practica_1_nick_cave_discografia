@@ -2,11 +2,11 @@ package com.bgp.practica1nickcavediscografia.view.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
+
 import android.view.View
 import android.widget.Toast
+import com.bgp.practica1nickcavediscografia.R
 import com.bgp.practica1nickcavediscografia.databinding.ActivityDetailAlbumBinding
-import com.bgp.practica1nickcavediscografia.databinding.ActivityDetailAlbumBinding.inflate
 import com.bgp.practica1nickcavediscografia.model.AlbumApi
 import com.bgp.practica1nickcavediscografia.model.AlbumDetail
 import com.bgp.practica1nickcavediscografia.util.Constants
@@ -21,6 +21,7 @@ import retrofit2.Response
 class DetailAlbumActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityDetailAlbumBinding
+    var error:String = getString(R.string.error)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,7 +59,7 @@ class DetailAlbumActivity : AppCompatActivity() {
                 override fun onFailure(call: Call<AlbumDetail>, t: Throwable) {
                     Toast.makeText(
                         this@DetailAlbumActivity,
-                        "No se obtuvieron datos, vuelva a intentarlo",
+                        error,
                         Toast.LENGTH_LONG
                     ).show()
                     binding.pbConexion.visibility = View.INVISIBLE

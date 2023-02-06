@@ -7,4 +7,5 @@
     <string name="musicians">Musicians</string>
     <string name="label">Label</string>
     <string name="long_des">Long Description</string>
+    <string name="error">No se obtuvieron datos, vuelva a intentarlo</string>
 </resources>
