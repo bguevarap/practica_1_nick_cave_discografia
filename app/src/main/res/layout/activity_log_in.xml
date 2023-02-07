@@ -40,7 +40,7 @@
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-
+        android:contentDescription="@string/img"
         app:layout_constraintBottom_toTopOf="@+id/tvUser"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,25 +55,27 @@
         android:background="@color/secundario"
         android:hint="@string/e_mail"
         android:inputType="textEmailAddress"
-        android:paddingLeft="@dimen/marTV"
+        android:paddingStart="@dimen/marTV"
+        android:paddingEnd="@dimen/marTV"
         android:textColor="@color/cuarto"
         android:textColorHint="@color/tercero"
         android:textSize="@dimen/campo"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline1" />
+        app:layout_constraintTop_toTopOf="@+id/guideline1"
+        android:autofillHints="name"/>
 
     <EditText
         android:id="@+id/tvPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/marCover"
-
         android:background="@color/secundario"
         android:hint="@string/pass"
         android:inputType="textPassword"
-        android:paddingLeft="@dimen/marTV"
+        android:paddingStart="@dimen/marTV"
+        android:paddingEnd="@dimen/marTV"
         android:textColor="@color/cuarto"
         android:textColorHint="@color/tercero"
         android:textSize="@dimen/campo"
@@ -81,7 +83,8 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        android:autofillHints="name"/>
 
     <Button
         android:id="@+id/btnLogIn"
@@ -101,7 +104,6 @@
         android:layout_height="wrap_content"
         android:text="@string/b_reg"
         android:textColor="@color/cuarto"
-        android:outlineSpotShadowColor="@color/cuarto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="parent"
@@ -136,7 +138,6 @@
         android:layout_height="wrap_content"
         android:text="@string/b_miss_pass"
         android:textColor="@color/cuarto"
-        android:outlineSpotShadowColor="@color/cuarto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline5"

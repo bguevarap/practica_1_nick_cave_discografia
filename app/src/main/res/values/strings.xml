@@ -37,4 +37,14 @@
     <string name="NO_MAIL">Favor de ingresar la dirección de correo</string>
     <string name="CANCEL">Cancelar</string>
     <string name="welcome">"Bienvenido: "</string>
+    <string name="img">iagen ref</string>
+    <string name="map_desc">Recorded at:</string>
+    <string name="TITLE">Recorded at:</string>
+    <string name="ler">disco</string>
+    <string name="maps">Grabado en:</string>
+    <string name="date">Año de lanzamiento</string>
+    <string name="prods">Productor(es):</string>
+    <string name="mus">Músicos:</string>
+    <string name="lbl">Disquera:</string>
+    <string name="info">"Más información "</string>
 </resources>

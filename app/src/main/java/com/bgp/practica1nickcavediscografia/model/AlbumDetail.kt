@@ -9,4 +9,7 @@ data class AlbumDetail(
     var longDesc: String?=null,
     var musicians: String?=null,
     var label: String?=null,
+    var latitud: String?=null,
+    var longitud: String?=null
+
 )

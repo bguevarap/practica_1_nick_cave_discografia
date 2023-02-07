@@ -35,7 +35,7 @@
                     android:gravity="center_horizontal"
                     android:paddingBottom="10dp"
                     android:textColor="@color/white"
-                    android:textSize="25sp"
+                    android:textSize="35sp"
                     tools:text="Title" />
 
                 <ImageView
@@ -44,69 +44,125 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/marTV"
                     tools:src="@drawable/ic_baseline_album_24" />
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/average"
+                    android:padding="@dimen/marCover"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    tools:text="@string/date" />
 
                 <TextView
                     android:id="@+id/tvDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/average"
-                    android:paddingLeft="15dp"
-                    android:paddingTop="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingBottom="10dp"
+                    android:padding="@dimen/marTV"
                     android:textColor="@color/white"
-                    android:textSize="20sp"
+                    android:textSize="25sp"
                     tools:text="@string/fechaDisco" />
+                <TextView
+                    android:id="@+id/prod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/average"
+                    android:padding="@dimen/marCover"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    tools:text="@string/prods" />
                 <TextView
                     android:id="@+id/tvProd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/average"
-                    android:paddingLeft="15dp"
-                    android:paddingTop="15dp"
-                    android:paddingRight="15dp"
+                    android:padding="@dimen/marTV"
                     android:paddingBottom="10dp"
                     android:textColor="@color/white"
-                    android:textSize="20sp"
+                    android:textSize="25sp"
                     tools:text="@string/prod" />
+                <TextView
+                    android:id="@+id/musc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/average"
+                    android:padding="@dimen/marCover"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    tools:text="@string/mus" />
                 <TextView
                     android:id="@+id/tvMus"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/average"
-                    android:paddingLeft="15dp"
-                    android:paddingTop="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingBottom="10dp"
+                    android:padding="@dimen/marTV"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     tools:text="@string/musicians" />
+                <TextView
+                    android:id="@+id/lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/average"
+                    android:padding="@dimen/marCover"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    tools:text="@string/lbl" />
                 <TextView
                     android:id="@+id/tvLabel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/average"
-                    android:paddingLeft="15dp"
-                    android:paddingTop="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingBottom="10dp"
+                    android:padding="@dimen/marTV"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     tools:text="@string/label" />
+                <TextView
+                    android:id="@+id/info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/average"
+                    android:padding="@dimen/marCover"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    tools:text="@string/info" />
                 <TextView
                     android:id="@+id/tvlongDes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/average"
-                    android:paddingLeft="15dp"
-                    android:paddingTop="15dp"
-                    android:paddingRight="15dp"
-                    android:paddingBottom="10dp"
+                    android:padding="@dimen/marTV"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     tools:text="@string/long_des" />
+                <TextView
+                    android:id="@+id/maps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/average"
+                    android:padding="@dimen/marCover"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    tools:text="@string/maps" />
+
+
+                    <androidx.fragment.app.FragmentContainerView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:id="@+id/map"
+                        >
+
+                    </androidx.fragment.app.FragmentContainerView>
+
+
+
 
             </LinearLayout>
+
+
+
         </ScrollView>
 
         <ProgressBar

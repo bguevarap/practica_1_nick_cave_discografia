@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.security.crypto.EncryptedSharedPreferences
 import androidx.security.crypto.MasterKey
+import com.bgp.practica1nickcavediscografia.R
 import com.bgp.practica1nickcavediscografia.databinding.ActivityMainBinding
 import com.bgp.practica1nickcavediscografia.model.Album
 import com.bgp.practica1nickcavediscografia.model.AlbumApi
@@ -38,7 +39,7 @@ class DiscographyActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Thread.sleep(3000)
+
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -47,7 +48,7 @@ class DiscographyActivity : AppCompatActivity() {
         user = firebaseAuth.currentUser
         userId = user?.uid
 
-        binding.tvUserName.text = user?.email
+        binding.tvUserName.text = getString(R.string.welcome) + user?.email
 
 
         binding.logOut.setOnClickListener() {

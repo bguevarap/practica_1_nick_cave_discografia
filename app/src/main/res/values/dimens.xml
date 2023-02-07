@@ -5,4 +5,5 @@
     <dimen name="marTV">10sp</dimen>
     <dimen name="campo">30sp</dimen>
     <dimen name="textv">15sp</dimen>
+    <dimen name="map">400dp</dimen>
 </resources>
